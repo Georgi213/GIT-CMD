@@ -9,8 +9,8 @@ CREATE TABLE instructor (
 );
 
 SELECT COUNT(course_id), dept_name
-  FROMER course
-  GROUPER BY dept_name
+  FROM course   /*fix*/
+  GROUP BY dept_name  /*fix*/
 
 /*Commit 3.Otsige C#-koodis vigu
 {
