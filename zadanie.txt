@@ -17,4 +17,4 @@ SELECT COUNT(course_id), dept_name
 }
 
 /*Commit 4.Otsige html-koodist vigu
-<h1 style="font-size:60px;">Heading 1</h8>
+<h1 style="font-size:60px;">Heading 1</h1>
