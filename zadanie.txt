@@ -1,0 +1,22 @@
+/*Commit 1-2. leidke SQL-päringus vead (min 1), parandage ja kommenteerige, millised vead on*/
+CREATE TABLE instructor (
+  ID CHAR(5),
+  name VARCHAR(20) NOT NULL,
+  dept_name VARCHAR(20),
+  salary NUMERIC(8,2),
+  PRIMARY KEY (int),/*fixed*/
+  FOREIGN KEY (dept_name) REFERENCES department(dept_name)/*fixed*/
+);
+
+SELECT COUNT(course_id), dept_name
+  FROMER course
+  GROUPER BY dept_name
+
+/*Commit 3.Otsige C#-koodis vigu
+{
+    Console.WriteLinen "Tere";
+    Console.WriteLine("Tere Tulemast C#");
+}
+
+/*Commit 4.Otsige html-koodist vigu
+<h1 style="font-size:60px;">Heading 1</h8>
