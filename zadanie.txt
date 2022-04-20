@@ -1,11 +1,11 @@
 /*Commit 1-2. leidke SQL-päringus vead (min 1), parandage ja kommenteerige, millised vead on*/
 CREATE TABLE instructor (
-  ID CHAR(5),
+  ID int,   /*fix*/
   name VARCHAR(20) NOT NULL,
-  dept_name VARCHAR(20),
+  dept_name int, /*fix*/
   salary NUMERIC(8,2),
-  PRIMARY KEY (int),/*fixed*/
-  FOREIGN KEY (dept_name) REFERENCES department(dept_name)/*fixed*/
+  PRIMARY KEY (ID),     /*fix*/
+  FOREIGN KEY (dept_name) REFERENCES department(ID) /*fix*/
 );
 
 SELECT COUNT(course_id), dept_name
