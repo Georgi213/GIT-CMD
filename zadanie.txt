@@ -12,7 +12,7 @@ SELECT COUNT(course_id), dept_name
 
 /*Commit 3.Otsige C#-koodis vigu
 {
-    Console.WriteLinen "Tere";
+    Console.WriteLinen ("Tere");/*fixed*/
     Console.WriteLine("Tere Tulemast C#");
 }
 
